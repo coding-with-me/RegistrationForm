@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorBackground"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@drawable/edittext_background"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/colorText"
+                android:padding="20dp"
+                android:textColor="@color/colorTextWhite"
+                android:layout_margin="10dp"
+                android:hint="Enter Username"/>
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittext_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/colorTextWhite"
+                android:padding="20dp"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorText"
+                android:hint="Enter Password"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password should be"
+                android:textColor="@color/colorTextWhite"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/unchecked"
+                    android:layout_margin="10dp"
+                    android:id="@+id/img1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="At least 8 character"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="15sp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/unchecked"
+                    android:layout_margin="10dp"
+                    android:id="@+id/img2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="at least one uppercase"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="15sp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/unchecked"
+                    android:layout_margin="10dp"
+                    android:id="@+id/img3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="At least one number"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="15sp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/unchecked"
+                    android:layout_margin="10dp"
+                    android:id="@+id/img4"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="At least one symbol"
+                    android:textColor="@color/colorTextWhite"
+                    android:textSize="15sp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:background="@color/colorButtonBackground"
+                android:textColor="#fff"
+                android:padding="25sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:stateListAnimator="@null"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
